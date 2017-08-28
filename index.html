@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OKEEFFE</title>
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  
+  <style type="text/css">
+  *{
+    margin: 0;
+  }
+  div {/*border: 2px solid white;*/}
+  /*////////////////////////////////////////////////THIS IS THE BACKGROUND PICTURE "POPPIES"*/
+.body{    
+      background-image: url("images/flower.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      overflow: scroll;
+      height: 1000px;
+      background: solid black;
+      background-repeat: no-repeat;
+      color: white;
+   }
+
+   ul li{
+    display:inline;
+    list-style: none;
+   }
+
+   ul{
+    background-color: black;
+    opacity: .3;
+    border-color: solid black;
+    border-top: 5px;
+    border-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+   }
+
+   li a{
+    display:inline-block;
+    color: white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    border: 5px;
+    border-color: black;
+   }
+   
+   li a:hover /*.dropdown:hover*/{
+    background: rgb(234, 130, 18); 
+
+   }
+   
+   /*//////////////////////////////////////////////////THIS IS THE BOOK COVER*/
+.book img{
+  /*width:600px;
+  height:600px;*/
+  margin-top:200px;
+  border: 2px solid black;
+  /*box-shadow: .5px 0px .5px .5px lightgrey;*/
+}
+.booksub {}
+/*/////////////////////////////////////////////////THIS IS FOR THE FOOTER (PARENT)////////////////////*/
+
+h1{
+  font-size: 30;
+  font-family: 'Nunito Sans', sans-serif; 
+}
+h2{
+  font-size: 20;
+  font-family: 'Nunito Sans', sans-serif; 
+}
+.sections{
+      /*display: flex;*/
+      height: auto;
+      width: auto;
+      /*font-weight: bolder;*/
+      font-size: 20;
+      /*padding: 5px;*/
+      background-color: rgb(15, 15, 15)/*(255,255,255,0.4)*/;
+      border: 1px solid black;
+      font-family: 'Nunito Sans', sans-serif;  
+    }
+
+
+#launch{
+  background-color: rgb(15, 15, 15);
+  
+}
+#artist{}
+#author{background-color: rgb(15, 15, 15);
+
+}
+#authorpic{
+
+}
+.paragraph{
+
+}
+.parentFooter{
+  display: flex;
+}
+.footer{
+      flex:1;
+      height: auto;
+      width: 200px;
+      font-weight: bolder;
+      text-align: center;
+      font-size: 20;
+      padding: 10px;
+      background-color: (255,255,255,0.4);
+      justify-content: space-around;
+      font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.hours{
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    font-size: 50px;
+    
+  }
+
+/*////////////////////////////////////////////////////THIS IS FOR THE FOOTER INFO DIVS*/
+
+#hours {background: white;
+        color: black;}
+#social {background: white;
+        color: black;
+        }
+#contact{background: white;
+        color: black;
+        padding-bottom: 50px}
+
+
+.modalDialog {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 99999;
+      opacity:0;
+      -webkit-transition: opacity 400ms ease-in;
+      -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      pointer-events: none;
+      }
+
+      .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+      }
+
+      .modalDialog > div {
+      width: 650px;
+      height: auto;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background: #fff;
+      background: -moz-linear-gradient(#fff, #999);
+      background: -webkit-linear-gradient(#fff, #999);
+      background: -o-linear-gradient(#fff, #999);
+      }
+
+      .close {
+      background: #606061;
+      color: #FFFFFF;
+      line-height: 25px;
+      position: absolute;
+      right: -12px;
+      text-align: center;
+      top: -10px;
+      width: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+      -moz-box-shadow: 1px 1px 3px #000;
+      -webkit-box-shadow: 1px 1px 3px #000;
+      box-shadow: 1px 1px 3px #000;
+      }
+
+.close:hover { background: #00d9ff; }
+
+
+</style>
+</head>
+<body>
+<!-- ///////////////////////////////////////////////////////THIS IS THE NAV BAR BUT WILL BE USED FOR SAME/SINGLE PAGE NAVIGATION///////////////////////////////////////-->
+  <div class="body">
+
+    <div> 
+      <ul>
+        <li><a href="#launch">ABOUT</a></li>
+        <li><a href="#artist">ARTIST</a></li>
+        <li><a href="#author">AUTHOR</a></li>
+        
+      
+      </ul>
+    </div>
+  <!-- /////////////////////////////////////////////////////THIS IS THE PHOTO OF THE BOOK COVER ////////////////////////////////////////////////////-->
+      <center>
+          <br>
+          <br>
+          <br>
+          <br>
+
+      <div class="book"> 
+          
+                    <img src="images/OKeeffe_Living_Modern_.jpg">
+
+                    <!-- ///////////////////////////////////////////THIS IS THE HEADER FOR THE BOOK LAUNCH       /////////////////////////////////////////////// -->
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                      <h2>BROOKLYN MUSEUM BOOK LAUNCH 8/31/17</h2>
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+              
+
+      </div>
+
+      </center>
+<!-- ///////////////////////////////////////////////
+THESE ARE THE LAUNCH, ARTIST, AUTHOR -->
+       
+        <div class="bookSub"> 
+
+            <div class="sections" id="launch"><a name="launch">
+
+                <div class="launchphoto">
+                <br>
+                <br>
+                <br>
+                <h2>Brooklyn Museum Book Launch 8/31/17</h2></a>
+                <br>
+                <br>
+      <!-- ////////////////////////////////////////////////////THIS IS THE VIDEO, COURTESY OF BROOKLYN MUSEUM -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/quG3EHonOns" frameborder="0" allowfullscreen></iframe>
+                <br>
+                <br>
+                </div>
+
+              <div class="paragraph" id="bookpara">
+                  <p>
+                  <!-- //////////////////////////////////////////////
+                  THIS BOOK DESCRIPTION IS FROM BK MUSEUM WEBSITE -->
+                  This book explores how Georgia O’Keeffe lived a life steeped in modernism, proclaiming her progressive, independent lifestyle through a self-crafted public persona—including her clothing and personal aesthetic.
+
+                  This fresh and carefully researched study brings O’Keeffe’s style to life, illuminating how this beloved American artist purposefully proclaimed her modernity in the way she dressed and posed for photographers, from Alfred Stieglitz to Bruce Weber. Richly illustrated with images of her art including views of the two homes she designed and furnished in New Mexico, the book also features never–before–published photographs of O’Keeffe’s clothing. Some of the most exquisite of these garments are attributed to O’Keeffe herself, a skilled seamstress who understood fabric and design, and who has become an icon in today’s fashion world as much for her personal style as for her painting. This beautiful book accompanies the first museum exhibition to bring together a collection of photographs, garments, and paintings to explore O’Keeffe’s unified modernist aesthetic and her determination to be in charge of how the world understood her identity and artistic values.
+
+                  Companion book of the exhibition Georgia O'Keeffe: Living Modern, now on view at the Brooklyn Museum.
+
+                </p>
+            </div>
+
+        <div class="sections" id="artist"><a name="launch">
+          <br>
+          <br>
+          <h2>Georgia O'Keeffe</h2></a>
+          <br>
+          <br>
+<!-- //////////////////////////////////////////////////THIS IS GO'S PIC ////////////////////////////////////// -->
+            <img src="images/goartist.jpg">
+<!--////////////////////////////////////////////////////THIS IS GO'S BIO COURTESY OF GO MUSEUM WEBSITE///////////////////////////////////////////////  -->
+            <div class="paragraph"  id="georgiapara">
+                <p>
+                    Georgia O'Keeffe is a 20th century American painter and pioneer of American modernism best known for her canvases depicting flowers, skyscrapers, animal skulls and southeastern landscapes.
+      
+                    “When you take a flower in your hand and really look at it, it's your world for the moment. I want to give that world to someone else.”
+                    —Georgia O'Keeffe
+
+                    Georgia O'Keeffe was born on November 15, 1887, in Sun Prairie, Wisconsin and studied at the Art Institute of Chicago and the Art Students League in New York. Photographer and art dealer Alfred Stieglitz gave O'Keeffe her first gallery show in 1916 and the couple married in 1924. Considered the "mother of American modernism," O'Keeffe moved to New Mexico after her husband's death and was inspired by the landscape to create numerous well-known paintings. Georgia O'Keeffe died on March 6, 1986 at the age of 98.
+                </p>
+            </div>
+
+        </div>
+
+          <div class="sections" id="author"><a name="launch">
+
+            <br>
+            <br>
+          <h2>Wanda M. Corn</h2></a>
+            <br>
+            <br>
+
+              <div id="authorpic">
+              <img src="images/wandakorn.jpg">
+              </div>
+
+              <br>
+              <br>
+
+            <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////THIS IS THE MODAL EMBEDDED IN AUTHOR PIC//////////////////////////////////////////////////////////////////////
+ -->
+                  <a href="#openModal">Interview with Wanda Corn</a>
+
+                <div id="openModal" class="modalDialog">
+                  <div>
+
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Wanda Korn BRIC Interview</h2>
+                    
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/VpOrvcjvJw4" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  
+                </div>
+                
+                  <br>
+                  <br>
+
+             <div class="paragraph" id="wandapara">
+             <!-- ///////////////////////////////////////////////////THIS IS THE AUTHOR INFO COURTESY OF STANFORD NEWS/////////////////////////////////////////////////// -->
+
+                  <div>
+                        <p>WANDA CORN, who has been a pioneer in the art world for more than 30 years, isn’t slowing down. The renowned art historian and Robert and Ruth Halperin Professor in Art History, Emerita, has a new project— this one the artist Georgia O’Keeffe.
+
+                        Corn’s ties to Stanford are long. When she joined Stanford in 1981, it was a momentous occasion for the university and for the field of art history. She was Stanford’s first appointment in the history of American art. A specialist in late 19th- and early 20th-century art, she was also one of the first academics to integrate photography and California artists into the history of American art curriculum.
+
+                        Eight years into her tenure at Stanford, she became the first female chair of the Department of Art and the acting director of the Stanford Museum. From 1992 to 1995, she was the Anthony P. Meier Family Professor and Director of the Stanford Humanities Center. When JOHN HENNESSY became president in 2000, and JOHN ETCHEMENDY became provost, Corn shared a vision with them of creating an arts neighborhood by relocating the Art Department, library and its collections within the vicinity of the museum. Besides the Cantor Center for Visual Arts, that district now includes the Bing Concert Hall, the Anderson Collection and the McMurtry Building for the Department of Art and Art History.
+
+                        Corn continues to influence and shape the field of art history. Her latest project is an exhibition at the Brooklyn Museum titled Georgia O’Keeffe: Living Modern, through July 23. Research for the project was made possible when Stanford nominated her for a Mellon Emeritus Fellowship.
+
+                        The exhibition is groundbreaking, as it is the first installation dedicated to an artist’s clothes and domestic environment in the context of their art. See the New York Times article here.
+
+                        “I think we are making museological history with this show,” said Corn. “The multimedia content and the elegant installation are getting enormous attention along with the fact that this approach produces an O’Keeffe we did not know. We have reinvigorated and reestablished her place in cultural history.”
+                          
+                        </p>
+                  </div>
+              </div>
+        </div>
+
+      </div>
+      <!-- /////////////////////////////////////////////////////
+  THIS IS THE FOOTER WHERE THE INFORMATION WILL BE STORED - FIXED POSITIONING -->
+  <!-- ///////////////////////////////////////////////////// -->
+  
+  <footer class="parentFooter">
+      
+<!-- ///////////////////////////////////////////////THIS IS THE TABLE FOR HOURS -->
+      <div class="footer" id="hours">
+        <center>
+          <h3>HOURS</h3>
+          <br>
+          <br>
+            <table>
+              <tr>
+                <td id="hours">MONDAY</td><td>Closed</td>
+              </tr>
+              <tr>
+                <td id="hours">TUESDAY</td><td>Closed</td>
+              </tr>       
+              <tr>
+                <td id="hours">WEDNESDAY</td><td>11 am–6 pm</td>
+              </tr>
+              <tr>
+                <td id="hours">THURSDAY</td><td>11 am–10 pm</td>
+              </tr>
+              <tr>
+                <td id="hours">FRIDAY</td><td>11 am–6 pm</td>
+              </tr>
+              <tr>
+                <td id="hours">SATURDAY</td><td>11 am–6 pm</td>
+              </tr>
+              <tr>
+                <td id="hours">SUNDAY</td><td>11 am–6 pm</td>
+              </tr>
+            </table> 
+
+        </center>        
+      </div>
+
+      <div class="footer" id="social">
+            
+            <h3>CONNECT</h3>
+              <center>
+                <br>
+                <br>
+                  <table>
+
+                      <tr><td><a href="https://www.facebook.com/"><img src="images/facebooklogo.png"></a></td></tr>
+                      
+                      <tr><td><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png"></a></td></tr>
+                      
+                      <tr><td><a href="https://www.instagram.com/?hl=en"><img src="images/instagramlogo.png"></a></td></tr>
+                 
+                  </table>
+              </center>
+      </div>
+    <!--   <div class="footer" id="misc">misc</div> -->
+
+      <div class="footer" id="contact">
+          <h3>CONTACT US</h3>
+            <div>
+
+              <a href="https://www.brooklynmuseum.org/"><img src="images/bklynmuseumlogo.png" ></a>  
+              <p>
+                200 Eastern Parkway
+                <br>
+                Brooklyn, New York 11238-6052
+                <br>
+                <br>
+                TELEPHONE
+                <br>
+                718.638.5000
+                <br>
+                <br>
+                EMAIL
+                <br>
+                information@brooklynmuseum.org
+
+              </p>
+
+            </div>
+      </div>
+
+  </footer>
+  <!-- <//////////////////////////////////////////////// -->
+</body>
+
+</html>
